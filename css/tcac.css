@@ -1,0 +1,125 @@
+body {
+    font-size: 16px;
+    background-color: aliceblue;
+}
+
+#main {
+    background-color:azure;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 50%;
+    padding: 3rem;
+    padding-top: 1rem;
+    border: 2px solid cadetblue;
+    border-radius: 1rem;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4rem !important;
+}
+
+h2.centerMe {
+    text-align: center;
+}
+
+#thirdFloor {
+    margin-left: 4rem;
+}
+
+input[type=radio]+label {
+    font-size: 1.7rem;
+}
+
+#incomeLimit {
+    width: 15%;
+    margin-left: 1rem;
+}
+
+hr {
+    border-top: 2px solid cadetblue !important;
+}
+
+#newClient {
+    margin-left: 4rem;
+}
+
+i {
+    font-size: 3rem;
+}
+
+#legend {
+    border: 2px solid cadetblue;
+    padding: 1rem;
+    width: 15%;
+    float: right;
+    border-radius: 1rem;
+}
+
+i.vacant {
+    color: green;
+    font-size: 2rem;
+}
+
+i.vacant + label, i.occupied + label {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+i.occupied {
+    color: red;
+    font-size: 2rem;
+}
+
+h3.secondRow {
+    margin-top: 5rem;
+}
+
+#floor2 .bedSquare {
+    min-width: 1.5rem;
+    display: inline-block;
+}
+
+#floor2 section {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#floor3 .bedSquare {
+    min-width: 1.5rem;
+    display: inline-block;
+}
+
+#floor3 section {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+section label {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.available {
+    color: green;
+}
+
+.pending {
+    color: yellow;
+}
+
+.unavailable {
+    color: red;
+}
+
+.top {
+    margin-bottom: 10px;
+}

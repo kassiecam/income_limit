@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Income Limit</title>
+    <link rel="stylesheet" href="css/tcac.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c47a917209.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+    <h1>Bed Assignments by Income Limit</h1>
+    <h2 class = "centerMe">Income Limit for 2022 <input id="incomeLimit" value="500.00"></input></h2>
+
+    <h2>Select Floor</h2>
+
+    <input type="radio" id="secondFloor" name="pmcFloor" value="2" onclick="clientPrompt()"></input>
+    <label for="secondFloor">2nd Floor (Women's Floor)</label>
+    <input type="radio" id="thirdFloor" name="pmcFloor" value="3" onclick="clientPrompt()"></input>
+    <label for="thirdFloor">3rd Floor (Men's Floor)</label>
+
+    <button id="newClient" onclick="promptForIncome()" class=" btn btn-primary hide">Add new client</button>
+
+    <section id="floor2" class="hide">
+        <h2>2nd Floor Bunk Beds</h2>
+        <hr>
+
+    <div id="legend">
+        <div><i class="fa-solid fa-square vacant"></i><label>Vacant</label></div>
+        <div><i class="fa-solid fa-square occupied"></i><label>Occupied</label></div>
+    </div>
+
+        <div id="Group 1">
+            <h3>Group 1</h3>
+            <section>
+                <div class="bedGroup2">
+                    <label>1A</label>
+                    <div position="top" clientidnumber="A100" income="100">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>1B</label>
+                    <div position="bottom" clientidnumber="A101" income="100">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>2A</label>
+                    <div position="top" clientidnumber="A102" income="499">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>2B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>3A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>3B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>4A</label>
+                    <div position="top" clientidnumber="A103" income="499">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>4B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>5A</label>
+                    <div position="top" clientidnumber="A104" income="490">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>5B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <h3 class="secondRow">Group 2</h3>
+            <section>
+                <div class="bedGroup2">
+                    <label>6A</label>
+                    <div position="top" clientidnumber="A105" income="400">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>6B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>7A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>7B</label>
+                    <div position="bottom" clientidnumber="A106" income="1">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>8A</label>
+                    <div position="top" clientidnumber="A107" income="200">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>8B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>9A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>9B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup2">
+                    <label>10A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>10B</label>
+                    <div position="bottom" clientidnumber="A108" income="300">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+       
+        </div>
+    </section>
+
+    <section id="floor3" class="hide">
+        <h2>3rd Floor Bunk Beds</h2>
+        <hr>
+        
+    <div id="legend">
+        <div><i class="fa-solid fa-square vacant"></i><label>Vacant</label></div>
+        <div><i class="fa-solid fa-square occupied"></i><label>Occupied</label></div>
+    </div>
+        <div id="Group 1">
+            <h3>Group 1</h3>
+            <section>
+                <div class="bedGroup3">
+                    <label>1A</label>
+                    <div position="top" clientidnumber="B100" income="499">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>1B</label>
+                    <div position="bottom" clientidnumber="B101" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>2A</label>
+                    <div position="top" clientidnumber="B102" income="250">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>2B</label>
+                    <div position="bottom" clientidnumber="B103" income="250">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>3A</label>
+                    <div position="top" clientidnumber="B104" income="300">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>3B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>4A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>4B</label>
+                    <div position="bottom" clientidnumber="B105" income="150">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>5A</label>
+                    <div position="top" clientidnumber="B106" income="50">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>5B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <h3 class="secondRow">Group 2</h3>
+            <section>
+                <div class="bedGroup3">
+                    <label>6A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>6B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>7A</label>
+                    <div position="top" clientidnumber="B110" income="250">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>7B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>8A</label>
+                    <div position="top" clientidnumber="B115" income="300">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>8B</label>
+                    <div position="bottom" clientidnumber="B116" income="100">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>9A</label>
+                    <div position="top" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>9B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bedGroup3">
+                    <label>10A</label>
+                    <div position="top" clientidnumber="B117" income="50">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                    <label>10B</label>
+                    <div position="bottom" clientidnumber="" income="">
+                        <div class="bedSquare"> <i class="fa-solid fa-bed"></i> </div>
+                    </div>
+                </div>
+            </section>  
+        </div>
+        </section>
+</div>
+    <script src="javascript/tcac.js"></script>
+
+</body>
+
+</html>
